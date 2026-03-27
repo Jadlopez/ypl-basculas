@@ -3,69 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Productos | YPL Básculas y Maquinaria</title>
   <meta
     name="description"
-    content="Catálogo de productos de YPL Básculas y Maquinaria en Florencia, Caquetá. Balanzas, básculas, carnicería, panadería, repuestos, accesorios y mobiliario comercial."
+    content="Productos de YPL Básculas y Maquinaria en Florencia, Caquetá. Balanzas, básculas, equipos para carnicería, panadería, repuestos, accesorios y mobiliario comercial."
   />
   <meta name="theme-color" content="#081018" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:title" content="Productos | YPL Básculas y Maquinaria" />
+  <meta
+    property="og:description"
+    content="Balanzas, básculas, equipos para carnicería, panadería, repuestos, accesorios y mobiliario comercial en Florencia, Caquetá."
+  />
+  <meta property="og:image" content="../assets/img/hero/bg-hero.jpg" />
+
   <link rel="icon" href="../assets/img/branding/favicon.ico" />
 
   <link rel="stylesheet" href="../assets/css/global/reset.css" />
   <link rel="stylesheet" href="../assets/css/global/variables.css" />
   <link rel="stylesheet" href="../assets/css/global/base.css" />
-  <link rel="stylesheet" href="../assets/css/global/layout.css" />
   <link rel="stylesheet" href="../assets/css/global/components.css" />
-  <link rel="stylesheet" href="../assets/css/global/responsive.css" />
   <link rel="stylesheet" href="../assets/css/pages/productos.css" />
 </head>
 <body>
-
   <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container header-container">
-      <a href="../index.html" class="logo" aria-label="Ir al inicio de YPL Básculas y Maquinaria">
-        <img src="../assets/img/branding/logo-ypl.png" alt="Logo YPL Básculas y Maquinaria" />
-      </a>
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Abrir menú principal"
-        aria-expanded="false"
-        aria-controls="mainNav"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="main-nav" id="mainNav" aria-label="Menú principal">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./index.html" class="active">Productos</a></li>
-          <li><a href="../servicios/index.html">Servicios</a></li>
-          <li><a href="../nosotros/index.html">Nosotros</a></li>
-          <li><a href="../contacto/index.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header" data-include="../partials/header.html"></div>
 
   <main id="contenido-principal">
 
-    <section class="products-top">
+    <section class="products-top" aria-labelledby="productos-title">
       <div class="container">
-        <div class="products-top__intro">
-          <span class="eyebrow">Catálogo</span>
-          <h1>Equipos y soluciones para comercio, industria y alimentos</h1>
-          <p>
-            YPL Básculas y Maquinaria es una empresa caqueteña especializada en sistemas de pesaje,
-            maquinaria industrial, procesamiento de alimentos, mantenimiento y soporte técnico.
-          </p>
-        </div>
 
         <div class="category-pills" aria-label="Categorías de productos">
           <a href="#balanzas">Balanzas comerciales</a>
@@ -612,71 +585,9 @@
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="../assets/img/branding/logo-ypl.png" alt="Logo YPL Básculas y Maquinaria" />
-        <p>Soluciones en equipos de pesaje, maquinaria industrial y soporte técnico en Florencia, Caquetá.</p>
-      </div>
+  <div id="site-footer" data-include="../partials/footer.html"></div>
 
-      <div class="footer-links">
-        <h3>Enlaces</h3>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./index.html">Productos</a></li>
-          <li><a href="../servicios/index.html">Servicios</a></li>
-          <li><a href="../nosotros/index.html">Nosotros</a></li>
-          <li><a href="../contacto/index.html">Contacto</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h3>Contacto</h3>
-        <ul>
-          <li><a href="tel:+573202020422">+57 320 2020422</a></li>
-          <li><a href="mailto:yplbascula@gmail.com">yplbascula@gmail.com</a></li>
-          <li>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Cra+12+%2318a-02,+Florencia,+Caqueta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Cra 12 #18a - 02, Florencia, Caquetá
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-social">
-        <h3>Redes</h3>
-        <ul>
-          <li><a href="https://www.facebook.com/yplbasculasymaquinaria" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="https://www.instagram.com/yplbasculasymaquinaria/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="https://wa.me/573202020422?text=Hola%20YPL%20B%C3%A1sculas%20y%20Maquinaria" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2026 YPL Básculas y Maquinaria. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <a
-    href="https://wa.me/573202020422?text=Hola%20YPL%20B%C3%A1sculas%20y%20Maquinaria,%20quiero%20m%C3%A1s%20informaci%C3%B3n."
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Hablar por WhatsApp"
-  >
-    <img src="../assets/img/icons/whatsapp.svg" alt="WhatsApp" />
-    <span class="whatsapp-float__pulse"></span>
-  </a>
-
+  <script src="../assets/js/includes.js"></script>
   <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/menu.js"></script>
-  <script src="../assets/js/whatsapp.js"></script>
 </body>
 </html>
