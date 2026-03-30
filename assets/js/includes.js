@@ -31,7 +31,7 @@ function setActiveNav() {
     const rawHref = link.getAttribute("href");
     if (!rawHref) return;
 
-    const href = new URL(rawHref, window.location.href)
+    const href = new URL(rawHref, window.location.origin)
       .pathname
       .replace(/\/+/g, "/")
       .replace(/index\.html$/, "")
@@ -71,11 +71,7 @@ function initHeaderScroll() {
   if (!header) return;
 
   const onScroll = () => {
-    if (window.scrollY > 10) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
+    header.classList.toggle("scrolled", window.scrollY > 10);
   };
 
   onScroll();
