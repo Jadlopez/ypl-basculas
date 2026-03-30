@@ -2,35 +2,6 @@
    COMPONENTS | HEADER · NAV · FOOTER · FLOAT
 ========================================= */
 
-:root {
-  --ui-dark: #081018;
-  --ui-dark-strong: rgba(8, 16, 24, 0.94);
-  --ui-dark-soft: rgba(8, 16, 24, 0.78);
-
-  --ui-white: #ffffff;
-  --ui-white-soft: rgba(255, 255, 255, 0.76);
-  --ui-white-muted: rgba(255, 255, 255, 0.56);
-
-  --ui-line: rgba(255, 255, 255, 0.08);
-  --ui-line-strong: rgba(255, 255, 255, 0.12);
-
-  --ui-accent: #22c56e;
-  --ui-accent-soft: #7fd4a7;
-  --ui-accent-strong: #17b26a;
-
-  --ui-shadow-xs: 0 6px 18px rgba(0, 0, 0, 0.08);
-  --ui-shadow-sm: 0 12px 28px rgba(0, 0, 0, 0.14);
-  --ui-shadow-md: 0 18px 40px rgba(0, 0, 0, 0.22);
-  --ui-shadow-lg: 0 26px 60px rgba(0, 0, 0, 0.28);
-
-  --ui-radius-sm: 14px;
-  --ui-radius-md: 18px;
-  --ui-radius-lg: 26px;
-
-  --ui-transition-fast: 0.22s cubic-bezier(0.22, 1, 0.36, 1);
-  --ui-transition: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
 /* =========================================
    HEADER GLOBAL
 ========================================= */
@@ -41,19 +12,19 @@
   left: 0;
   width: 100%;
   z-index: 1200;
-  background: var(--ui-dark-soft);
+  background: rgba(8, 16, 24, 0.78);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--ui-line);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition:
-    background-color var(--ui-transition),
-    border-color var(--ui-transition),
-    box-shadow var(--ui-transition),
-    transform var(--ui-transition);
+    background-color 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease,
+    transform 0.28s ease;
 }
 
 .site-header.scrolled {
-  background: var(--ui-dark-strong);
+  background: rgba(8, 16, 24, 0.94);
   border-bottom-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
 }
@@ -86,11 +57,10 @@
   box-shadow:
     0 8px 22px rgba(0, 0, 0, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.72);
-  overflow: hidden;
   transition:
-    transform var(--ui-transition-fast),
-    box-shadow var(--ui-transition-fast),
-    filter var(--ui-transition-fast);
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  overflow: hidden;
 }
 
 .logo:hover .logo-box {
@@ -98,7 +68,6 @@
   box-shadow:
     0 12px 28px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  filter: saturate(1.03);
 }
 
 .logo-box img {
@@ -136,17 +105,16 @@
   font-weight: 700;
   letter-spacing: -0.01em;
   transition:
-    color var(--ui-transition-fast),
-    opacity var(--ui-transition-fast),
-    transform var(--ui-transition-fast);
+    color 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .main-nav a:hover {
-  color: var(--ui-accent-soft);
+  color: #7fd4a7;
 }
 
 .main-nav a.active {
-  color: var(--ui-accent-soft);
+  color: #7fd4a7;
 }
 
 .main-nav a::after {
@@ -157,13 +125,13 @@
   width: 100%;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--ui-accent) 0%, var(--ui-accent-soft) 100%);
+  background: linear-gradient(90deg, #22c56e 0%, #7fd4a7 100%);
   transform: scaleX(0);
   transform-origin: left;
   opacity: 0;
   transition:
-    transform var(--ui-transition-fast),
-    opacity var(--ui-transition-fast);
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .main-nav a:hover::after,
@@ -189,16 +157,14 @@
   flex-direction: column;
   gap: 5px;
   transition:
-    background-color var(--ui-transition-fast),
-    border-color var(--ui-transition-fast),
-    transform var(--ui-transition-fast),
-    box-shadow var(--ui-transition-fast);
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .menu-toggle:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.14);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
 }
 
 .menu-toggle span {
@@ -283,53 +249,13 @@
   color: rgba(255, 255, 255, 0.74);
   text-decoration: none;
   transition:
-    color var(--ui-transition-fast),
-    opacity var(--ui-transition-fast),
-    transform var(--ui-transition-fast);
+    color 0.25s ease,
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
 .site-footer a:hover {
-  color: var(--ui-accent-soft);
-}
-
-.footer-links a,
-.footer-contact a {
-  display: inline-flex;
-  align-items: center;
-  line-height: 1.6;
-}
-
-/* redes con icono + nombre */
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.72rem;
-  line-height: 1.45;
-}
-
-.social-icon {
-  width: 18px;
-  height: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.82);
-  transition:
-    color var(--ui-transition-fast),
-    transform var(--ui-transition-fast);
-}
-
-.social-icon svg {
-  width: 18px;
-  height: 18px;
-  display: block;
-  fill: currentColor;
-}
-
-.social-link:hover .social-icon {
-  color: var(--ui-accent-soft);
-  transform: translateY(-1px);
+  color: #7fd4a7;
 }
 
 .footer-bottom {
@@ -366,8 +292,8 @@
     0 18px 40px rgba(23, 178, 106, 0.32),
     0 0 0 1px rgba(255, 255, 255, 0.14) inset;
   transition:
-    transform var(--ui-transition-fast),
-    box-shadow var(--ui-transition-fast);
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .whatsapp-float:hover {
@@ -395,12 +321,10 @@
     transform: scale(1);
     opacity: 0.7;
   }
-
   70% {
     transform: scale(1.42);
     opacity: 0;
   }
-
   100% {
     transform: scale(1.42);
     opacity: 0;
@@ -416,7 +340,7 @@
 .menu-toggle:focus-visible,
 .site-footer a:focus-visible,
 .whatsapp-float:focus-visible {
-  outline: 2px solid var(--ui-accent-soft);
+  outline: 2px solid #7fd4a7;
   outline-offset: 4px;
 }
 
