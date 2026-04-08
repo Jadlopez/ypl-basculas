@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  min-height: 78px;
+  min-height: 60px;
 }
 
 /* =========================================
@@ -392,7 +392,7 @@
 
 @media (max-width: 640px) {
   .header-container {
-    min-height: 72px;
+    min-height: 60px;
   }
 
   .logo-box {
