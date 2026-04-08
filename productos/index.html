@@ -1,1281 +1,1281 @@
-<!DOCTYPE html>
-<html lang="es">
+  <!DOCTYPE html>
+  <html lang="es">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Productos | YPL Básculas y Maquinaria</title>
-  <meta name="description"
-    content="Productos de YPL Básculas y Maquinaria en Florencia, Caquetá. Básculas, balanzas, grameras, termómetros, equipos para carnicería, maquinaria para alimentos, repuestos, accesorios y mobiliario comercial." />
-  <meta name="theme-color" content="#081018" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="index, follow" />
+    <title>Productos | YPL Básculas y Maquinaria</title>
+    <meta name="description"
+      content="Productos de YPL Básculas y Maquinaria en Florencia, Caquetá. Básculas, balanzas, grameras, termómetros, equipos para carnicería, maquinaria para alimentos, repuestos, accesorios y mobiliario comercial." />
+    <meta name="theme-color" content="#081018" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_CO" />
-  <meta property="og:title" content="Productos | YPL Básculas y Maquinaria" />
-  <meta property="og:description"
-    content="Básculas, balanzas, grameras, termómetros, equipos para carnicería, maquinaria para alimentos, repuestos y mobiliario comercial en Florencia, Caquetá." />
-  <meta property="og:image" content="../assets/img/hero/bg-hero.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="Productos | YPL Básculas y Maquinaria" />
+    <meta property="og:description"
+      content="Básculas, balanzas, grameras, termómetros, equipos para carnicería, maquinaria para alimentos, repuestos y mobiliario comercial en Florencia, Caquetá." />
+    <meta property="og:image" content="../assets/img/hero/bg-hero.jpg" />
 
-  <link rel="icon" href="../assets/img/branding/favicon.ico" />
+    <link rel="icon" href="../assets/img/branding/favicon.ico" />
 
-  <link rel="stylesheet" href="../assets/css/global/reset.css" />
-  <link rel="stylesheet" href="../assets/css/global/variables.css" />
-  <link rel="stylesheet" href="../assets/css/global/base.css" />
-  <link rel="stylesheet" href="../assets/css/global/components.css" />
-  <link rel="stylesheet" href="../assets/css/pages/productos.css" />
-</head>
+    <link rel="stylesheet" href="../assets/css/global/reset.css" />
+    <link rel="stylesheet" href="../assets/css/global/variables.css" />
+    <link rel="stylesheet" href="../assets/css/global/base.css" />
+    <link rel="stylesheet" href="../assets/css/global/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages/productos.css" />
+  </head>
 
-<body>
-  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+  <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
 
-  <div id="site-header" data-include="../partials/header.html"></div>
+    <div id="site-header" data-include="../partials/header.html"></div>
 
-  <section class="products-top" aria-labelledby="productos-title">
-  <div class="container">
-    <h1 id="productos-title" class="sr-only">
-      Productos YPL Básculas y Maquinaria
-    </h1>
+    <section class="products-top" aria-labelledby="productos-title">
+    <div class="container">
+      <h1 id="productos-title" class="sr-only">
+        Productos YPL Básculas y Maquinaria
+      </h1>
 
-    <div class="catalog-tools">
-      <div class="catalog-toolbar">
+      <div class="catalog-tools">
+        <div class="catalog-toolbar">
 
-        <div class="catalog-search">
-          <span class="catalog-search__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8" />
-              <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          </span>
+          <div class="catalog-search">
+            <span class="catalog-search__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8" />
+                <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </span>
 
-          <label for="productSearch" class="sr-only">Buscar productos</label>
-          <input
-            type="search"
-            id="productSearch"
-            placeholder="Buscar productos..."
-            autocomplete="off" />
+            <label for="productSearch" class="sr-only">Buscar productos</label>
+            <input
+              type="search"
+              id="productSearch"
+              placeholder="Buscar productos..."
+              autocomplete="off" />
+
+            <button
+              type="button"
+              class="catalog-search__clear"
+              id="searchClearBtn"
+              hidden
+              aria-label="Limpiar búsqueda">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="catalog-select-wrap">
+            <label for="categoryFilter" class="sr-only">Filtrar por categoría</label>
+            <select id="categoryFilter" class="catalog-select">
+              <option value="all">Todas las categorías</option>
+              <option value="comercial">Balanzas y básculas comerciales</option>
+              <option value="industriales">Básculas industriales y ganaderas</option>
+              <option value="salud">Balanzas de salud</option>
+              <option value="grameras">Grameras</option>
+              <option value="termometros">Termómetros</option>
+              <option value="carniceria">Carnicería</option>
+              <option value="alimentos">Maquinaria para alimentos</option>
+              <option value="accesorios">Accesorios y utensilios</option>
+              <option value="repuestos">Repuestos</option>
+              <option value="mobiliario">Comercial y mobiliario</option>
+            </select>
+          </div>
+
+          <p class="catalog-result-inline" id="catalogResultText" aria-live="polite">
+            62 productos
+          </p>
 
           <button
             type="button"
-            class="catalog-search__clear"
-            id="searchClearBtn"
-            hidden
-            aria-label="Limpiar búsqueda">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+            class="catalog-reset-btn"
+            id="clearFiltersBtn"
+            hidden>
+            Limpiar
           </button>
+
         </div>
-
-        <div class="catalog-select-wrap">
-          <label for="categoryFilter" class="sr-only">Filtrar por categoría</label>
-          <select id="categoryFilter" class="catalog-select">
-            <option value="all">Todas las categorías</option>
-            <option value="comercial">Balanzas y básculas comerciales</option>
-            <option value="industriales">Básculas industriales y ganaderas</option>
-            <option value="salud">Balanzas de salud</option>
-            <option value="grameras">Grameras</option>
-            <option value="termometros">Termómetros</option>
-            <option value="carniceria">Carnicería</option>
-            <option value="alimentos">Maquinaria para alimentos</option>
-            <option value="accesorios">Accesorios y utensilios</option>
-            <option value="repuestos">Repuestos</option>
-            <option value="mobiliario">Comercial y mobiliario</option>
-          </select>
-        </div>
-
-        <p class="catalog-result-inline" id="catalogResultText" aria-live="polite">
-          62 productos
-        </p>
-
-        <button
-          type="button"
-          class="catalog-reset-btn"
-          id="clearFiltersBtn"
-          hidden>
-          Limpiar
-        </button>
-
       </div>
     </div>
-  </div>
-</section>
-
-    <!-- BALANZAS Y BÁSCULAS COMERCIALES -->
-    <section class="catalog-section" id="comercial" data-section="comercial" aria-labelledby="titulo-comercial">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-comercial">Balanzas y básculas comerciales</h2>
-          <p>
-            Balanzas liquidadoras, colgantes, inalámbricas, básculas abatibles, dinamómetros y equipos
-            de pesaje para operación diaria.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Balanza liquidadora en acero inoxidable" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-liquidadora-acero-inoxidable.jpg"
-                alt="Balanza liquidadora en acero inoxidable" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Balanza liquidadora en acero inoxidable</h3>
-              <p>Ideal para negocios, punto de venta y uso comercial continuo.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20liquidadora%20en%20acero%20inoxidable."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Balanza liquidadora pasta" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-liquidadora-pasta.jpg"
-                alt="Balanza liquidadora pasta" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Balanza liquidadora pasta</h3>
-              <p>Opción funcional para comercio y operación de mostrador.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20liquidadora%20pasta."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Balanza liquidadora BBG Brangus" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-liquidadora-bbg-brangus.jpg"
-                alt="Balanza liquidadora BBG Brangus" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Balanza liquidadora BBG Brangus</h3>
-              <p>Diseñada para pesaje comercial con lectura clara y uso frecuente.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20liquidadora%20BBG%20Brangus."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Balanza de colgar 25 lb" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-colgar-platon-cadena-25lb.jpg"
-                alt="Balanza de colgar platon cadena 25 lb" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Balanza de colgar 25 lb</h3>
-              <p>Práctica para negocios que requieren pesaje suspendido.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20de%20colgar%2025%20lb."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Pesa maleta digital" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/pesa-maleta-digital.jpg"
-                alt="Pesa maleta digital" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Pesa maleta digital</h3>
-              <p>Compacto y práctico para control de peso portátil.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20pesa%20maleta%20digital."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Balanza inalámbrica BBG" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-inalambrica-bbg.jpg"
-                alt="Balanza inalámbrica BBG" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Balanza inalámbrica BBG</h3>
-              <p>Ideal para operación comercial con mayor comodidad de lectura.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20inal%C3%A1mbrica%20BBG."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Dinamómetro digital" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/dinamometro-digital.jpg"
-                alt="Dinamómetro digital" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Dinamómetro digital</h3>
-              <p>Equipo útil para pesaje colgante y control de carga.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20dinam%C3%B3metro%20digital."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Dinamómetro digital C-100" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/dinamometro-digital-c100.jpg"
-                alt="Dinamómetro digital C-100" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Dinamómetro digital C-100</h3>
-              <p>Opción de pesaje colgante para trabajo técnico y comercial.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20dinam%C3%B3metro%20digital%20C-100."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Dinamómetro digital peso colgante" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/dinamometro-digital-peso-colgante.jpg"
-                alt="Dinamómetro digital peso colgante" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Dinamómetro digital peso colgante</h3>
-              <p>Alternativa práctica para control de peso suspendido.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20dinam%C3%B3metro%20digital%20peso%20colgante."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula inalámbrica lámina alfajor" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-inalambrica-lamina-alfajor.jpg"
-                alt="Báscula inalámbrica lámina alfajor" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula inalámbrica lámina alfajor</h3>
-              <p>Ideal para pesaje comercial con estructura resistente.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20inal%C3%A1mbrica%20l%C3%A1mina%20alfajor."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula inalámbrica full acero" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-inalambrica-full-acero.jpg"
-                alt="Báscula inalámbrica full acero" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula inalámbrica full acero</h3>
-              <p>Construcción robusta para comercio y trabajo intensivo.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20inal%C3%A1mbrica%20full%20acero."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula abatible 60 kg" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-abatible-60kg.jpg"
-                alt="Báscula abatible 60 kg" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula abatible 60 kg</h3>
-              <p>Práctica para pesaje comercial y espacios reducidos.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20abatible%2060%20kg."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula abatible Tek" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-abatible-tek.jpg"
-                alt="Báscula abatible Tek" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula abatible Tek</h3>
-              <p>Opción comercial resistente para distintas capacidades de trabajo.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20abatible%20Tek."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula abatible full acero" data-category="comercial">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-abatible-full-acero.jpg"
-                alt="Báscula abatible full acero" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula abatible full acero</h3>
-              <p>Equipo robusto para pesaje comercial con alta durabilidad.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20abatible%20full%20acero."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- BÁSCULAS INDUSTRIALES -->
-    <section class="catalog-section" id="industriales" data-section="industriales" aria-labelledby="titulo-industriales">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-industriales">Básculas industriales y ganaderas</h2>
-          <p>
-            Soluciones para ganadería, porcicultura, veterinaria, carga pesada y operación industrial o rural.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Báscula ganadera full electrónica" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-ganadera-full-electronica.jpg"
-                alt="Báscula ganadera full electrónica" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula ganadera full electrónica</h3>
-              <p>Ideal para control de peso animal y operación ganadera.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20ganadera%20full%20electr%C3%B3nica."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula camionera metálica" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-camionera-metalica.jpg"
-                alt="Báscula camionera metálica" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula camionera metálica</h3>
-              <p>Solución para pesaje de alto tonelaje y operación pesada.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20camionera%20met%C3%A1lica."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula bajo perfil lámina alfajor" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-bajo-perfil-lamina-alfajor.jpg"
-                alt="Báscula bajo perfil lámina alfajor" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula bajo perfil lámina alfajor</h3>
-              <p>Práctica para carga y operación de pesaje con plataforma.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20bajo%20perfil%20l%C3%A1mina%20alfajor."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula veterinaria BBG Pet 200" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-veterinaria-bbg-pet-200.jpg"
-                alt="Báscula veterinaria BBG Pet 200" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula veterinaria BBG Pet 200</h3>
-              <p>Ideal para control de peso en uso veterinario y animal.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20veterinaria%20BBG%20Pet%20200."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Brete báscula ganadera" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/brete-bascula-ganadera.jpg"
-                alt="Brete báscula ganadera" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Brete báscula ganadera</h3>
-              <p>Estructura pensada para manejo y control de ganado.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20brete%20b%C3%A1scula%20ganadera."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Barras ganaderas BBG Bull" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/barras-ganaderas-bbg-bull.jpg"
-                alt="Barras ganaderas BBG Bull" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Barras ganaderas BBG Bull</h3>
-              <p>Complemento de pesaje para manejo ganadero especializado.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20las%20barras%20ganaderas%20BBG%20Bull."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula porcina full electrónica" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-porcina-full-electronica.jpg"
-                alt="Báscula porcina full electrónica" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula porcina full electrónica</h3>
-              <p>Ideal para pesaje porcino con precisión y resistencia.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20porcina%20full%20electr%C3%B3nica."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula porcina maya metálica" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-porcina-maya-metalica.jpg"
-                alt="Báscula porcina maya metálica" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula porcina maya metálica</h3>
-              <p>Diseñada para trabajo porcino y pesaje en entorno rural.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20porcina%20maya%20met%C3%A1lica."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Báscula ganadera mecánica" data-category="industriales">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-ganadera-mecanica.jpg"
-                alt="Báscula ganadera mecánica" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Báscula ganadera mecánica</h3>
-              <p>Opción funcional para manejo ganadero y control de peso.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20ganadera%20mec%C3%A1nica."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- BALANZAS DE SALUD -->
-    <section class="catalog-section" id="salud" data-section="salud" aria-labelledby="titulo-salud">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-salud">Balanzas de salud</h2>
-          <p>
-            Equipos para control de peso personal, infantil y con tallímetro para diferentes usos.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Pesa persona vidrio 180 kg" data-category="salud">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-salud/pesa-persona-vidrio-180kg.jpg"
-                alt="Pesa persona vidrio 180 kg" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Pesa persona vidrio 180 kg</h3>
-              <p>Para control de peso personal con diseño compacto.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20persona%20vidrio%20180%20kg."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Pesa persona mecánica DT-602 / 612" data-category="salud">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-salud/pesa-persona-mecanica-dt-602-612.jpg"
-                alt="Pesa persona mecánica DT-602 612" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Pesa persona mecánica DT-602 / 612</h3>
-              <p>Equipo clásico para control de peso personal.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20persona%20mec%C3%A1nica%20DT-602%20/%20612."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Pesa bebé 25 kg" data-category="salud">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-salud/pesa-bebe-25kg.jpg"
-                alt="Pesa bebé 25 kg" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Pesa bebé 25 kg</h3>
-              <p>Ideal para control de peso infantil con lectura práctica.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20beb%C3%A9%2025%20kg."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Pesa persona con tallímetro electrónica 200 kg" data-category="salud">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/balanzas-salud/pesa-persona-tallimetro-electronica-200kg.jpg"
-                alt="Pesa persona con tallímetro electrónica 200 kg" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Pesa persona con tallímetro electrónica 200 kg</h3>
-              <p>Equipo para control de peso y talla en un solo sistema.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20persona%20con%20tall%C3%ADmetro%20electr%C3%B3nica%20200%20kg."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GRAMERAS -->
-    <section class="catalog-section" id="grameras" data-section="grameras" aria-labelledby="titulo-grameras">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-grameras">Grameras</h2>
-          <p>
-            Opciones para alimentos, laboratorio y pesaje de precisión en diferentes entornos.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Gramera digital SF-400" data-category="grameras">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/grameras/gramera-digital-sf400.jpg"
-                alt="Gramera digital SF-400" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Gramera digital SF-400</h3>
-              <p>Ideal para cocina, comercio y control de pequeñas cantidades.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20digital%20SF-400."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Gramera análoga en acero" data-category="grameras">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/grameras/gramera-analoga-acero.jpg"
-                alt="Gramera análoga en acero" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Gramera análoga en acero</h3>
-              <p>Opción práctica para alimentos y uso comercial básico.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20an%C3%A1loga%20en%20acero."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Gramera de laboratorio con urna" data-category="grameras">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/grameras/gramera-laboratorio-urna.jpg"
-                alt="Gramera de laboratorio con urna" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Gramera de laboratorio con urna</h3>
-              <p>Diseñada para pesaje más delicado y controlado.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20de%20laboratorio%20con%20urna."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Gramera para alimentos" data-category="grameras">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/grameras/gramera-alimentos.jpg"
-                alt="Gramera para alimentos" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Gramera para alimentos</h3>
-              <p>Útil para cocina, preparación y control de ingredientes.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20para%20alimentos."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- TERMÓMETROS -->
-    <section class="catalog-section" id="termometros" data-section="termometros" aria-labelledby="titulo-termometros">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-termometros">Termómetros y medición</h2>
-          <p>
-            Termómetros digitales, análogos, infrarrojos y equipos de control ambiental para alimentos y operación técnica.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Termo-higrómetro digital" data-category="termometros">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/termometros/termo-higrometro-digital.jpg"
-                alt="Termo-higrómetro digital" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Termo-higrómetro digital</h3>
-              <p>Controla temperatura y humedad en un mismo equipo.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20termo-higr%C3%B3metro%20digital."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Termómetro digital 2 teclas" data-category="termometros">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/termometros/termometro-digital-2-teclas.jpg"
-                alt="Termómetro digital 2 teclas" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Termómetro digital 2 teclas</h3>
-              <p>Ideal para cocina, alimentos y control de temperatura.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20digital%202%20teclas."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Termómetro digital Food BBQ" data-category="termometros">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/termometros/termometro-digital-food-bbq.jpg"
-                alt="Termómetro digital Food BBQ" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Termómetro digital Food / BBQ</h3>
-              <p>Útil para alimentos, cocción y control de preparación.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20digital%20Food%20/%20BBQ."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Termómetro análogo Tecnik" data-category="termometros">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/termometros/termometro-analogo-tecnik.jpg"
-                alt="Termómetro análogo Tecnik" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Termómetro análogo Tecnik</h3>
-              <p>Para medición de frío o calor en distintos entornos.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20an%C3%A1logo%20Tecnik."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Termómetro infrarrojo" data-category="termometros">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/termometros/termometro-infrarrojo.jpg"
-                alt="Termómetro infrarrojo" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Termómetro infrarrojo</h3>
-              <p>Medición rápida sin contacto para distintos usos.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20infrarrojo."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CARNICERÍA -->
-    <section class="catalog-section" id="carniceria" data-section="carniceria" aria-labelledby="titulo-carniceria">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-carniceria">Equipos para carnicería</h2>
-          <p>
-            Sierras, molinos, embutidoras, tajadoras, cuchillos y herramientas para procesamiento cárnico.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Sierra sinfín mesa 65" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/sierra-sinfin-mesa-65.jpg"
-                alt="Sierra sinfín mesa 65" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Sierra sinfín mesa 65</h3>
-              <p>Ideal para corte de carne en trabajo profesional.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20sierra%20sinf%C3%ADn%20mesa%2065."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Molino industrial 12 22 32" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/molino-industrial-12-22-32.jpg"
-                alt="Molino industrial 12 22 32" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Molino industrial 12 / 22 / 32</h3>
-              <p>Equipo para procesamiento de carne en diferentes capacidades.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20molino%20industrial%2012%20/%2022%20/%2032."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Embutidora eléctrica BBG TVR E10" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/embutidora-electrica-bbg-tvr-e10.jpg"
-                alt="Embutidora eléctrica BBG TVR E10" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Embutidora eléctrica BBG TVR E10</h3>
-              <p>Opción para producción cárnica con trabajo continuo.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20embutidora%20el%C3%A9ctrica%20BBG%20TVR%20E10."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Tajadora Torrey 300R" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/tajadora-torrey-300r.jpg"
-                alt="Tajadora Torrey 300R" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Tajadora Torrey 300R</h3>
-              <p>Equipo útil para corte uniforme en trabajo profesional.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20tajadora%20Torrey%20300R."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Hachuela línea económica" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/hachuela-linea-economica.jpg"
-                alt="Hachuela línea económica" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Hachuela línea económica</h3>
-              <p>Herramienta práctica para trabajo de corte cárnico.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20hachuela%20l%C3%ADnea%20econ%C3%B3mica."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Tramontina profesional" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/tramontina-profesional.jpg"
-                alt="Tramontina profesional" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Tramontina profesional</h3>
-              <p>Línea profesional para uso exigente en carnicería y cocina.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20l%C3%ADnea%20Tramontina%20profesional."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Hacha mango acrílico" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/hacha-mango-acrilico.jpg"
-                alt="Hacha mango acrílico" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Hacha mango acrílico</h3>
-              <p>Herramienta resistente para trabajo cárnico profesional.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20hacha%20mango%20acr%C3%ADlico."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Tabla y bancos para picar" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/tabla-bancos-picar-acrilico.jpg"
-                alt="Tabla y bancos para picar" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Tabla y bancos para picar</h3>
-              <p>Superficie de apoyo para trabajo de carnicería y corte.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20tabla%20y%20bancos%20para%20picar."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Cuchillos Tramontina" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/cuchillos-tramontina.jpg"
-                alt="Cuchillos Tramontina" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Cuchillos Tramontina</h3>
-              <p>Herramienta esencial para corte y manipulación de carne.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20los%20cuchillos%20Tramontina."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Imán en plástico" data-category="carniceria">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-carniceria/iman-plastico.jpg"
-                alt="Imán en plástico" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Imán en plástico</h3>
-              <p>Accesorio útil para organización y soporte de herramientas.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20im%C3%A1n%20en%20pl%C3%A1stico."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- MAQUINARIA ALIMENTOS -->
-    <section class="catalog-section" id="alimentos" data-section="alimentos" aria-labelledby="titulo-alimentos">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-alimentos">Maquinaria para alimentos</h2>
-          <p>
-            Amasadoras, batidoras, licuadoras, empacadoras y otras soluciones para producción y preparación.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Amasadora BBG MAS 20" data-category="alimentos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/maquinaria-alimentos/amasadora-bbg-mas-20.jpg"
-                alt="Amasadora BBG MAS 20" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Amasadora BBG MAS-20</h3>
-              <p>Ideal para panadería y preparación continua de masa.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20amasadora%20BBG%20MAS-20."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Batidora industrial" data-category="alimentos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/maquinaria-alimentos/batidora-industrial.jpg"
-                alt="Batidora industrial" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Batidora industrial</h3>
-              <p>Equipo para mezclas y preparación en cocina o panadería.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20batidora%20industrial."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Licuadora industrial BBG Crush 6" data-category="alimentos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/maquinaria-alimentos/licuadora-industrial-bbg-crush-6.jpg"
-                alt="Licuadora industrial BBG Crush 6" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Licuadora industrial BBG Crush-6</h3>
-              <p>Ideal para trabajo intensivo en preparación de alimentos.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20licuadora%20industrial%20BBG%20Crush-6."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Empacadora al vacío Pack 4 1 BBG" data-category="alimentos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/maquinaria-alimentos/empacadora-vacio-pack-4-1-bbg.jpg"
-                alt="Empacadora al vacío Pack 4 1 BBG" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Empacadora al vacío Pack 4-1 BBG</h3>
-              <p>Para empaque y conservación de alimentos de forma eficiente.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20empacadora%20al%20vac%C3%ADo%20Pack%204-1%20BBG."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Molino para granos" data-category="alimentos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/maquinaria-alimentos/molino-para-granos.jpg"
-                alt="Molino para granos" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Molino para granos</h3>
-              <p>Útil para procesamiento de granos y preparación alimentaria.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20molino%20para%20granos."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACCESORIOS -->
-    <section class="catalog-section" id="accesorios" data-section="accesorios" aria-labelledby="titulo-accesorios">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-accesorios">Accesorios y utensilios</h2>
-          <p>
-            Complementos de trabajo para carnicería, cocina y operación comercial.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Chaira Tramontina" data-category="accesorios">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/accesorios-utensilios/chaira-tramontina.jpg"
-                alt="Chaira Tramontina" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Chaira Tramontina</h3>
-              <p>Ideal para mantenimiento y afilado de cuchillos.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20chaira%20Tramontina."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Guante anticorte" data-category="accesorios">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/accesorios-utensilios/guante-anticorte.jpg"
-                alt="Guante anticorte" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Guante anticorte</h3>
-              <p>Protección adicional para trabajo de corte y manipulación.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20guante%20anticorte."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Ganchos cárnicos fijos y giratorios" data-category="accesorios">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/accesorios-utensilios/gancho-carnicos-fijos-giratorios.jpg"
-                alt="Ganchos cárnicos fijos y giratorios" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Ganchos cárnicos fijos y giratorios</h3>
-              <p>Accesorio útil para manejo y colgado en trabajo cárnico.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20los%20ganchos%20c%C3%A1rnicos%20fijos%20y%20giratorios."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- REPUESTOS -->
-    <section class="catalog-section" id="repuestos" data-section="repuestos" aria-labelledby="titulo-repuestos">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-repuestos">Repuestos y componentes</h2>
-          <p>
-            Indicadores, celdas de carga, cajas de empalme, baterías y piezas para servicio técnico y pesaje.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Celda de carga NB" data-category="repuestos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/repuestos-componentes/celda-carga-nb.jpg"
-                alt="Celda de carga NB" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Celda de carga NB</h3>
-              <p>Componente esencial para sistemas de pesaje y soporte técnico.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20celda%20de%20carga%20NB."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Indicador industrial Industry 20" data-category="repuestos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/repuestos-componentes/indicador-industrial-industry-20.jpg"
-                alt="Indicador industrial Industry 20" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Indicador industrial Industry 20</h3>
-              <p>Equipo de lectura y control para soluciones de pesaje.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20indicador%20industrial%20Industry%2020."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Caja de empalme" data-category="repuestos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/repuestos-componentes/caja-empalme.jpg"
-                alt="Caja de empalme" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Caja de empalme</h3>
-              <p>Componente técnico para conexión y operación del sistema.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20caja%20de%20empalme."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Baterías 4V 6V 7V" data-category="repuestos">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/repuestos-componentes/baterias-4v-6v-7v.jpg"
-                alt="Baterías 4V 6V 7V" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Baterías 4V / 6V / 7V</h3>
-              <p>Opciones de alimentación para equipos y básculas.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20las%20bater%C3%ADas%204V%20/%206V%20/%207V."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- MOBILIARIO -->
-    <section class="catalog-section" id="mobiliario" data-section="mobiliario" aria-labelledby="titulo-mobiliario">
-      <div class="container">
-        <div class="catalog-section__head">
-          <h2 id="titulo-mobiliario">Equipos comerciales y mobiliario</h2>
-          <p>
-            POS, cajas registradoras, cajones monederos y soluciones de apoyo para operación comercial.
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card" data-name="Combo sistema POS" data-category="mobiliario">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-comerciales-mobiliario/combo-sistema-pos.jpg"
-                alt="Combo sistema POS" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Combo sistema POS</h3>
-              <p>Ideal para caja, facturación y punto de venta.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20combo%20sistema%20POS."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Caja registradora" data-category="mobiliario">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-comerciales-mobiliario/caja-registradora-tez-ma.jpg"
-                alt="Caja registradora Tez Ma" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Caja registradora</h3>
-              <p>Equipo básico para operación comercial y control de ventas.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20caja%20registradora."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Cajón monedero" data-category="mobiliario">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-comerciales-mobiliario/cajon-monedero-5-billetes-8-monedas.jpg"
-                alt="Cajón monedero" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Cajón monedero</h3>
-              <p>Apoyo para caja y organización de dinero en punto de venta.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20caj%C3%B3n%20monedero."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card" data-name="Mesa de trabajo en acero inoxidable" data-category="mobiliario">
-            <div class="product-card__media">
-              <img src="../assets/img/productos/equipos-comerciales-mobiliario/mesa-trabajo-acero-inoxidable-salpicadero.jpg"
-                alt="Mesa de trabajo en acero inoxidable" loading="lazy" />
-            </div>
-            <div class="product-card__content">
-              <h3>Mesa de trabajo en acero inoxidable</h3>
-              <p>Superficie ideal para preparación y apoyo en operación alimentaria.</p>
-              <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20mesa%20de%20trabajo%20en%20acero%20inoxidable."
-                target="_blank" rel="noopener noreferrer" class="mini-cta">
-                <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="catalog-empty" id="catalogEmpty" hidden>
-      <div class="container">
-        <div class="catalog-empty__box">
-          <h2>No encontramos productos con esa búsqueda</h2>
-          <p>Prueba con otro nombre o consulta directamente por WhatsApp.</p>
-          <a href="https://wa.me/573202020422?text=Hola%20YPL,%20estoy%20buscando%20un%20producto%20y%20quiero%20asesor%C3%ADa."
-            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp">
-            <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-            <span>Consultar por WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="catalog-cta">
-      <div class="container">
-        <div class="catalog-cta__box">
-          <div class="catalog-cta__text">
-            <h2>¿Buscas otra referencia o capacidad?</h2>
+  </section>
+
+      <!-- BALANZAS Y BÁSCULAS COMERCIALES -->
+      <section class="catalog-section" id="comercial" data-section="comercial" aria-labelledby="titulo-comercial">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-comercial">Balanzas y básculas comerciales</h2>
             <p>
-              También manejamos más productos del catálogo: indicadores, dinamómetros, básculas abatibles,
-              equipos para carnicería, panadería, repuestos y soluciones especiales según tu necesidad.
+              Balanzas liquidadoras, colgantes, inalámbricas, básculas abatibles, dinamómetros y equipos
+              de pesaje para operación diaria.
             </p>
           </div>
-          <a href="https://wa.me/573202020422?text=Hola%20YPL,%20estoy%20buscando%20un%20producto%20que%20no%20veo%20en%20el%20cat%C3%A1logo."
-            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp">
-            <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
-            <span>Consultar por WhatsApp</span>
-          </a>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Balanza liquidadora en acero inoxidable" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-liquidadora-acero-inoxidable.jpg"
+                  alt="Balanza liquidadora en acero inoxidable" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Balanza liquidadora en acero inoxidable</h3>
+                <p>Ideal para negocios, punto de venta y uso comercial continuo.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20liquidadora%20en%20acero%20inoxidable."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Balanza liquidadora pasta" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-liquidadora-pasta.jpg"
+                  alt="Balanza liquidadora pasta" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Balanza liquidadora pasta</h3>
+                <p>Opción funcional para comercio y operación de mostrador.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20liquidadora%20pasta."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Balanza liquidadora BBG Brangus" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-liquidadora-bbg-brangus.jpg"
+                  alt="Balanza liquidadora BBG Brangus" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Balanza liquidadora BBG Brangus</h3>
+                <p>Diseñada para pesaje comercial con lectura clara y uso frecuente.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20liquidadora%20BBG%20Brangus."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Balanza de colgar 25 lb" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-colgar-platon-cadena-25lb.jpg"
+                  alt="Balanza de colgar platon cadena 25 lb" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Balanza de colgar 25 lb</h3>
+                <p>Práctica para negocios que requieren pesaje suspendido.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20de%20colgar%2025%20lb."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Pesa maleta digital" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/pesa-maleta-digital.jpg"
+                  alt="Pesa maleta digital" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Pesa maleta digital</h3>
+                <p>Compacto y práctico para control de peso portátil.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20pesa%20maleta%20digital."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Balanza inalámbrica BBG" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/balanza-inalambrica-bbg.jpg"
+                  alt="Balanza inalámbrica BBG" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Balanza inalámbrica BBG</h3>
+                <p>Ideal para operación comercial con mayor comodidad de lectura.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20balanza%20inal%C3%A1mbrica%20BBG."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Dinamómetro digital" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/dinamometro-digital.jpg"
+                  alt="Dinamómetro digital" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Dinamómetro digital</h3>
+                <p>Equipo útil para pesaje colgante y control de carga.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20dinam%C3%B3metro%20digital."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Dinamómetro digital C-100" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/dinamometro-digital-c100.jpg"
+                  alt="Dinamómetro digital C-100" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Dinamómetro digital C-100</h3>
+                <p>Opción de pesaje colgante para trabajo técnico y comercial.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20dinam%C3%B3metro%20digital%20C-100."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Dinamómetro digital peso colgante" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/dinamometro-digital-peso-colgante.jpg"
+                  alt="Dinamómetro digital peso colgante" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Dinamómetro digital peso colgante</h3>
+                <p>Alternativa práctica para control de peso suspendido.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20dinam%C3%B3metro%20digital%20peso%20colgante."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula inalámbrica lámina alfajor" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-inalambrica-lamina-alfajor.jpg"
+                  alt="Báscula inalámbrica lámina alfajor" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula inalámbrica lámina alfajor</h3>
+                <p>Ideal para pesaje comercial con estructura resistente.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20inal%C3%A1mbrica%20l%C3%A1mina%20alfajor."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula inalámbrica full acero" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-inalambrica-full-acero.jpg"
+                  alt="Báscula inalámbrica full acero" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula inalámbrica full acero</h3>
+                <p>Construcción robusta para comercio y trabajo intensivo.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20inal%C3%A1mbrica%20full%20acero."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula abatible 60 kg" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-abatible-60kg.jpg"
+                  alt="Báscula abatible 60 kg" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula abatible 60 kg</h3>
+                <p>Práctica para pesaje comercial y espacios reducidos.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20abatible%2060%20kg."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula abatible Tek" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-abatible-tek.jpg"
+                  alt="Báscula abatible Tek" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula abatible Tek</h3>
+                <p>Opción comercial resistente para distintas capacidades de trabajo.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20abatible%20Tek."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula abatible full acero" data-category="comercial">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-y-basculas-comerciales/bascula-abatible-full-acero.jpg"
+                  alt="Báscula abatible full acero" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula abatible full acero</h3>
+                <p>Equipo robusto para pesaje comercial con alta durabilidad.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20abatible%20full%20acero."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <!-- BÁSCULAS INDUSTRIALES -->
+      <section class="catalog-section" id="industriales" data-section="industriales" aria-labelledby="titulo-industriales">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-industriales">Básculas industriales y ganaderas</h2>
+            <p>
+              Soluciones para ganadería, porcicultura, veterinaria, carga pesada y operación industrial o rural.
+            </p>
+          </div>
 
-  <div id="site-footer" data-include="../partials/footer.html"></div>
+          <div class="products-grid">
+            <article class="product-card" data-name="Báscula ganadera full electrónica" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-ganadera-full-electronica.jpg"
+                  alt="Báscula ganadera full electrónica" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula ganadera full electrónica</h3>
+                <p>Ideal para control de peso animal y operación ganadera.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20ganadera%20full%20electr%C3%B3nica."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
 
-  <script src="../assets/js/includes.js"></script>
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/productos.js"></script>
-</body>
+            <article class="product-card" data-name="Báscula camionera metálica" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-camionera-metalica.jpg"
+                  alt="Báscula camionera metálica" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula camionera metálica</h3>
+                <p>Solución para pesaje de alto tonelaje y operación pesada.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20camionera%20met%C3%A1lica."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
 
-</html>
+            <article class="product-card" data-name="Báscula bajo perfil lámina alfajor" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-bajo-perfil-lamina-alfajor.jpg"
+                  alt="Báscula bajo perfil lámina alfajor" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula bajo perfil lámina alfajor</h3>
+                <p>Práctica para carga y operación de pesaje con plataforma.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20bajo%20perfil%20l%C3%A1mina%20alfajor."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula veterinaria BBG Pet 200" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-veterinaria-bbg-pet-200.jpg"
+                  alt="Báscula veterinaria BBG Pet 200" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula veterinaria BBG Pet 200</h3>
+                <p>Ideal para control de peso en uso veterinario y animal.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20veterinaria%20BBG%20Pet%20200."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Brete báscula ganadera" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/brete-bascula-ganadera.jpg"
+                  alt="Brete báscula ganadera" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Brete báscula ganadera</h3>
+                <p>Estructura pensada para manejo y control de ganado.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20brete%20b%C3%A1scula%20ganadera."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Barras ganaderas BBG Bull" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/barras-ganaderas-bbg-bull.jpg"
+                  alt="Barras ganaderas BBG Bull" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Barras ganaderas BBG Bull</h3>
+                <p>Complemento de pesaje para manejo ganadero especializado.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20las%20barras%20ganaderas%20BBG%20Bull."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula porcina full electrónica" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-porcina-full-electronica.jpg"
+                  alt="Báscula porcina full electrónica" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula porcina full electrónica</h3>
+                <p>Ideal para pesaje porcino con precisión y resistencia.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20porcina%20full%20electr%C3%B3nica."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula porcina maya metálica" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-porcina-maya-metalica.jpg"
+                  alt="Báscula porcina maya metálica" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula porcina maya metálica</h3>
+                <p>Diseñada para trabajo porcino y pesaje en entorno rural.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20porcina%20maya%20met%C3%A1lica."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Báscula ganadera mecánica" data-category="industriales">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/basculas-industriales-ganaderas/bascula-ganadera-mecanica.jpg"
+                  alt="Báscula ganadera mecánica" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Báscula ganadera mecánica</h3>
+                <p>Opción funcional para manejo ganadero y control de peso.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20b%C3%A1scula%20ganadera%20mec%C3%A1nica."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BALANZAS DE SALUD -->
+      <section class="catalog-section" id="salud" data-section="salud" aria-labelledby="titulo-salud">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-salud">Balanzas de salud</h2>
+            <p>
+              Equipos para control de peso personal, infantil y con tallímetro para diferentes usos.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Pesa persona vidrio 180 kg" data-category="salud">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-salud/pesa-persona-vidrio-180kg.jpg"
+                  alt="Pesa persona vidrio 180 kg" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Pesa persona vidrio 180 kg</h3>
+                <p>Para control de peso personal con diseño compacto.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20persona%20vidrio%20180%20kg."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Pesa persona mecánica DT-602 / 612" data-category="salud">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-salud/pesa-persona-mecanica-dt-602-612.jpg"
+                  alt="Pesa persona mecánica DT-602 612" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Pesa persona mecánica DT-602 / 612</h3>
+                <p>Equipo clásico para control de peso personal.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20persona%20mec%C3%A1nica%20DT-602%20/%20612."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Pesa bebé 25 kg" data-category="salud">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-salud/pesa-bebe-25kg.jpg"
+                  alt="Pesa bebé 25 kg" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Pesa bebé 25 kg</h3>
+                <p>Ideal para control de peso infantil con lectura práctica.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20beb%C3%A9%2025%20kg."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Pesa persona con tallímetro electrónica 200 kg" data-category="salud">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/balanzas-salud/pesa-persona-tallimetro-electronica-200kg.jpg"
+                  alt="Pesa persona con tallímetro electrónica 200 kg" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Pesa persona con tallímetro electrónica 200 kg</h3>
+                <p>Equipo para control de peso y talla en un solo sistema.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20pesa%20persona%20con%20tall%C3%ADmetro%20electr%C3%B3nica%20200%20kg."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GRAMERAS -->
+      <section class="catalog-section" id="grameras" data-section="grameras" aria-labelledby="titulo-grameras">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-grameras">Grameras</h2>
+            <p>
+              Opciones para alimentos, laboratorio y pesaje de precisión en diferentes entornos.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Gramera digital SF-400" data-category="grameras">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/grameras/gramera-digital-sf400.jpg"
+                  alt="Gramera digital SF-400" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Gramera digital SF-400</h3>
+                <p>Ideal para cocina, comercio y control de pequeñas cantidades.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20digital%20SF-400."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Gramera análoga en acero" data-category="grameras">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/grameras/gramera-analoga-acero.jpg"
+                  alt="Gramera análoga en acero" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Gramera análoga en acero</h3>
+                <p>Opción práctica para alimentos y uso comercial básico.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20an%C3%A1loga%20en%20acero."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Gramera de laboratorio con urna" data-category="grameras">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/grameras/gramera-laboratorio-urna.jpg"
+                  alt="Gramera de laboratorio con urna" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Gramera de laboratorio con urna</h3>
+                <p>Diseñada para pesaje más delicado y controlado.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20de%20laboratorio%20con%20urna."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Gramera para alimentos" data-category="grameras">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/grameras/gramera-alimentos.jpg"
+                  alt="Gramera para alimentos" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Gramera para alimentos</h3>
+                <p>Útil para cocina, preparación y control de ingredientes.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20gramera%20para%20alimentos."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TERMÓMETROS -->
+      <section class="catalog-section" id="termometros" data-section="termometros" aria-labelledby="titulo-termometros">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-termometros">Termómetros y medición</h2>
+            <p>
+              Termómetros digitales, análogos, infrarrojos y equipos de control ambiental para alimentos y operación técnica.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Termo-higrómetro digital" data-category="termometros">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/termometros/termo-higrometro-digital.jpg"
+                  alt="Termo-higrómetro digital" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Termo-higrómetro digital</h3>
+                <p>Controla temperatura y humedad en un mismo equipo.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20termo-higr%C3%B3metro%20digital."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Termómetro digital 2 teclas" data-category="termometros">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/termometros/termometro-digital-2-teclas.jpg"
+                  alt="Termómetro digital 2 teclas" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Termómetro digital 2 teclas</h3>
+                <p>Ideal para cocina, alimentos y control de temperatura.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20digital%202%20teclas."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Termómetro digital Food BBQ" data-category="termometros">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/termometros/termometro-digital-food-bbq.jpg"
+                  alt="Termómetro digital Food BBQ" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Termómetro digital Food / BBQ</h3>
+                <p>Útil para alimentos, cocción y control de preparación.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20digital%20Food%20/%20BBQ."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Termómetro análogo Tecnik" data-category="termometros">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/termometros/termometro-analogo-tecnik.jpg"
+                  alt="Termómetro análogo Tecnik" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Termómetro análogo Tecnik</h3>
+                <p>Para medición de frío o calor en distintos entornos.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20an%C3%A1logo%20Tecnik."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Termómetro infrarrojo" data-category="termometros">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/termometros/termometro-infrarrojo.jpg"
+                  alt="Termómetro infrarrojo" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Termómetro infrarrojo</h3>
+                <p>Medición rápida sin contacto para distintos usos.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20term%C3%B3metro%20infrarrojo."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARNICERÍA -->
+      <section class="catalog-section" id="carniceria" data-section="carniceria" aria-labelledby="titulo-carniceria">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-carniceria">Equipos para carnicería</h2>
+            <p>
+              Sierras, molinos, embutidoras, tajadoras, cuchillos y herramientas para procesamiento cárnico.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Sierra sinfín mesa 65" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/sierra-sinfin-mesa-65.jpg"
+                  alt="Sierra sinfín mesa 65" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Sierra sinfín mesa 65</h3>
+                <p>Ideal para corte de carne en trabajo profesional.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20sierra%20sinf%C3%ADn%20mesa%2065."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Molino industrial 12 22 32" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/molino-industrial-12-22-32.jpg"
+                  alt="Molino industrial 12 22 32" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Molino industrial 12 / 22 / 32</h3>
+                <p>Equipo para procesamiento de carne en diferentes capacidades.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20molino%20industrial%2012%20/%2022%20/%2032."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Embutidora eléctrica BBG TVR E10" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/embutidora-electrica-bbg-tvr-e10.jpg"
+                  alt="Embutidora eléctrica BBG TVR E10" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Embutidora eléctrica BBG TVR E10</h3>
+                <p>Opción para producción cárnica con trabajo continuo.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20embutidora%20el%C3%A9ctrica%20BBG%20TVR%20E10."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Tajadora Torrey 300R" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/tajadora-torrey-300r.jpg"
+                  alt="Tajadora Torrey 300R" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Tajadora Torrey 300R</h3>
+                <p>Equipo útil para corte uniforme en trabajo profesional.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20tajadora%20Torrey%20300R."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Hachuela línea económica" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/hachuela-linea-economica.jpg"
+                  alt="Hachuela línea económica" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Hachuela línea económica</h3>
+                <p>Herramienta práctica para trabajo de corte cárnico.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20hachuela%20l%C3%ADnea%20econ%C3%B3mica."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Tramontina profesional" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/tramontina-profesional.jpg"
+                  alt="Tramontina profesional" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Tramontina profesional</h3>
+                <p>Línea profesional para uso exigente en carnicería y cocina.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20l%C3%ADnea%20Tramontina%20profesional."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Hacha mango acrílico" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/hacha-mango-acrilico.jpg"
+                  alt="Hacha mango acrílico" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Hacha mango acrílico</h3>
+                <p>Herramienta resistente para trabajo cárnico profesional.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20hacha%20mango%20acr%C3%ADlico."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Tabla y bancos para picar" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/tabla-bancos-picar-acrilico.jpg"
+                  alt="Tabla y bancos para picar" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Tabla y bancos para picar</h3>
+                <p>Superficie de apoyo para trabajo de carnicería y corte.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20tabla%20y%20bancos%20para%20picar."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Cuchillos Tramontina" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/cuchillos-tramontina.jpg"
+                  alt="Cuchillos Tramontina" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Cuchillos Tramontina</h3>
+                <p>Herramienta esencial para corte y manipulación de carne.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20los%20cuchillos%20Tramontina."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Imán en plástico" data-category="carniceria">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-carniceria/iman-plastico.jpg"
+                  alt="Imán en plástico" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Imán en plástico</h3>
+                <p>Accesorio útil para organización y soporte de herramientas.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20im%C3%A1n%20en%20pl%C3%A1stico."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAQUINARIA ALIMENTOS -->
+      <section class="catalog-section" id="alimentos" data-section="alimentos" aria-labelledby="titulo-alimentos">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-alimentos">Maquinaria para alimentos</h2>
+            <p>
+              Amasadoras, batidoras, licuadoras, empacadoras y otras soluciones para producción y preparación.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Amasadora BBG MAS 20" data-category="alimentos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/maquinaria-alimentos/amasadora-bbg-mas-20.jpg"
+                  alt="Amasadora BBG MAS 20" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Amasadora BBG MAS-20</h3>
+                <p>Ideal para panadería y preparación continua de masa.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20amasadora%20BBG%20MAS-20."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Batidora industrial" data-category="alimentos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/maquinaria-alimentos/batidora-industrial.jpg"
+                  alt="Batidora industrial" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Batidora industrial</h3>
+                <p>Equipo para mezclas y preparación en cocina o panadería.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20batidora%20industrial."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Licuadora industrial BBG Crush 6" data-category="alimentos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/maquinaria-alimentos/licuadora-industrial-bbg-crush-6.jpg"
+                  alt="Licuadora industrial BBG Crush 6" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Licuadora industrial BBG Crush-6</h3>
+                <p>Ideal para trabajo intensivo en preparación de alimentos.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20licuadora%20industrial%20BBG%20Crush-6."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Empacadora al vacío Pack 4 1 BBG" data-category="alimentos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/maquinaria-alimentos/empacadora-vacio-pack-4-1-bbg.jpg"
+                  alt="Empacadora al vacío Pack 4 1 BBG" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Empacadora al vacío Pack 4-1 BBG</h3>
+                <p>Para empaque y conservación de alimentos de forma eficiente.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20empacadora%20al%20vac%C3%ADo%20Pack%204-1%20BBG."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Molino para granos" data-category="alimentos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/maquinaria-alimentos/molino-para-granos.jpg"
+                  alt="Molino para granos" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Molino para granos</h3>
+                <p>Útil para procesamiento de granos y preparación alimentaria.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20molino%20para%20granos."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACCESORIOS -->
+      <section class="catalog-section" id="accesorios" data-section="accesorios" aria-labelledby="titulo-accesorios">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-accesorios">Accesorios y utensilios</h2>
+            <p>
+              Complementos de trabajo para carnicería, cocina y operación comercial.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Chaira Tramontina" data-category="accesorios">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/accesorios-utensilios/chaira-tramontina.jpg"
+                  alt="Chaira Tramontina" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Chaira Tramontina</h3>
+                <p>Ideal para mantenimiento y afilado de cuchillos.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20chaira%20Tramontina."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Guante anticorte" data-category="accesorios">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/accesorios-utensilios/guante-anticorte.jpg"
+                  alt="Guante anticorte" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Guante anticorte</h3>
+                <p>Protección adicional para trabajo de corte y manipulación.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20guante%20anticorte."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Ganchos cárnicos fijos y giratorios" data-category="accesorios">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/accesorios-utensilios/gancho-carnicos-fijos-giratorios.jpg"
+                  alt="Ganchos cárnicos fijos y giratorios" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Ganchos cárnicos fijos y giratorios</h3>
+                <p>Accesorio útil para manejo y colgado en trabajo cárnico.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20los%20ganchos%20c%C3%A1rnicos%20fijos%20y%20giratorios."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- REPUESTOS -->
+      <section class="catalog-section" id="repuestos" data-section="repuestos" aria-labelledby="titulo-repuestos">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-repuestos">Repuestos y componentes</h2>
+            <p>
+              Indicadores, celdas de carga, cajas de empalme, baterías y piezas para servicio técnico y pesaje.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Celda de carga NB" data-category="repuestos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/repuestos-componentes/celda-carga-nb.jpg"
+                  alt="Celda de carga NB" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Celda de carga NB</h3>
+                <p>Componente esencial para sistemas de pesaje y soporte técnico.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20celda%20de%20carga%20NB."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Indicador industrial Industry 20" data-category="repuestos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/repuestos-componentes/indicador-industrial-industry-20.jpg"
+                  alt="Indicador industrial Industry 20" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Indicador industrial Industry 20</h3>
+                <p>Equipo de lectura y control para soluciones de pesaje.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20indicador%20industrial%20Industry%2020."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Caja de empalme" data-category="repuestos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/repuestos-componentes/caja-empalme.jpg"
+                  alt="Caja de empalme" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Caja de empalme</h3>
+                <p>Componente técnico para conexión y operación del sistema.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20caja%20de%20empalme."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Baterías 4V 6V 7V" data-category="repuestos">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/repuestos-componentes/baterias-4v-6v-7v.jpg"
+                  alt="Baterías 4V 6V 7V" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Baterías 4V / 6V / 7V</h3>
+                <p>Opciones de alimentación para equipos y básculas.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20las%20bater%C3%ADas%204V%20/%206V%20/%207V."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOBILIARIO -->
+      <section class="catalog-section" id="mobiliario" data-section="mobiliario" aria-labelledby="titulo-mobiliario">
+        <div class="container">
+          <div class="catalog-section__head">
+            <h2 id="titulo-mobiliario">Equipos comerciales y mobiliario</h2>
+            <p>
+              POS, cajas registradoras, cajones monederos y soluciones de apoyo para operación comercial.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-name="Combo sistema POS" data-category="mobiliario">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-comerciales-mobiliario/combo-sistema-pos.jpg"
+                  alt="Combo sistema POS" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Combo sistema POS</h3>
+                <p>Ideal para caja, facturación y punto de venta.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20combo%20sistema%20POS."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Caja registradora" data-category="mobiliario">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-comerciales-mobiliario/caja-registradora-tez-ma.jpg"
+                  alt="Caja registradora Tez Ma" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Caja registradora</h3>
+                <p>Equipo básico para operación comercial y control de ventas.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20caja%20registradora."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Cajón monedero" data-category="mobiliario">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-comerciales-mobiliario/cajon-monedero-5-billetes-8-monedas.jpg"
+                  alt="Cajón monedero" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Cajón monedero</h3>
+                <p>Apoyo para caja y organización de dinero en punto de venta.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20el%20caj%C3%B3n%20monedero."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Mesa de trabajo en acero inoxidable" data-category="mobiliario">
+              <div class="product-card__media">
+                <img src="../assets/img/productos/equipos-comerciales-mobiliario/mesa-trabajo-acero-inoxidable-salpicadero.jpg"
+                  alt="Mesa de trabajo en acero inoxidable" loading="lazy" />
+              </div>
+              <div class="product-card__content">
+                <h3>Mesa de trabajo en acero inoxidable</h3>
+                <p>Superficie ideal para preparación y apoyo en operación alimentaria.</p>
+                <a href="https://wa.me/573202020422?text=Hola%20YPL,%20quiero%20cotizar%20la%20mesa%20de%20trabajo%20en%20acero%20inoxidable."
+                  target="_blank" rel="noopener noreferrer" class="mini-cta">
+                  <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+                  <span>Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-empty" id="catalogEmpty" hidden>
+        <div class="container">
+          <div class="catalog-empty__box">
+            <h2>No encontramos productos con esa búsqueda</h2>
+            <p>Prueba con otro nombre o consulta directamente por WhatsApp.</p>
+            <a href="https://wa.me/573202020422?text=Hola%20YPL,%20estoy%20buscando%20un%20producto%20y%20quiero%20asesor%C3%ADa."
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp">
+              <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+              <span>Consultar por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-cta">
+        <div class="container">
+          <div class="catalog-cta__box">
+            <div class="catalog-cta__text">
+              <h2>¿Buscas otra referencia o capacidad?</h2>
+              <p>
+                También manejamos más productos del catálogo: indicadores, dinamómetros, básculas abatibles,
+                equipos para carnicería, panadería, repuestos y soluciones especiales según tu necesidad.
+              </p>
+            </div>
+            <a href="https://wa.me/573202020422?text=Hola%20YPL,%20estoy%20buscando%20un%20producto%20que%20no%20veo%20en%20el%20cat%C3%A1logo."
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp">
+              <img src="../assets/img/icons/whatsapp.svg" alt="" aria-hidden="true" />
+              <span>Consultar por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <div id="site-footer" data-include="../partials/footer.html"></div>
+
+    <script src="../assets/js/includes.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/productos.js"></script>
+  </body>
+
+  </html>
