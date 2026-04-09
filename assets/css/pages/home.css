@@ -543,16 +543,18 @@ div {
 
 .category-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   display: block;
-  object-fit: cover;
-  background: var(--home-surface-soft-2);
+  object-fit: contain;
+  background: #ffffff;
+  padding: 8px;
   transform-origin: center center;
   transition:
     transform var(--home-transition-slow),
     filter var(--home-transition),
     opacity var(--home-transition);
 }
+
 
 .category-card h3 {
   margin: 0;
@@ -787,8 +789,8 @@ div {
   }
 
   .category-card:hover img {
-    transform: scale(1.06);
-    filter: saturate(1.08) contrast(1.03);
+    transform: scale(1.02);
+    filter: saturate(1.04) contrast(1.02);
   }
 
   .category-card:hover h3 {
