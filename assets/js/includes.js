@@ -19,25 +19,29 @@ async function loadPartial(selector) {
   }
 }
 
-function setActiveNav() {
-  const currentPath = window.location.pathname
+function normalizePath(path) {
+  return path
     .replace(/\/+/g, "/")
     .replace(/index\.html$/, "")
-    .replace(/\/$/, "");
+    .replace(/\/$/, "") || "/";
+}
 
-  const navLinks = document.querySelectorAll("[data-nav]");
+function setActiveNav() {
+  const currentPath = normalizePath(window.location.pathname);
+  const navLinks = document.querySelectorAll(".nav-link");
 
   navLinks.forEach((link) => {
+    link.classList.remove("active");
+    link.removeAttribute("aria-current");
+
     const rawHref = link.getAttribute("href");
     if (!rawHref) return;
 
-    const href = new URL(rawHref, window.location.origin)
-      .pathname
-      .replace(/\/+/g, "/")
-      .replace(/index\.html$/, "")
-      .replace(/\/$/, "");
+    const linkPath = normalizePath(
+      new URL(rawHref, window.location.origin).pathname
+    );
 
-    if (href === currentPath) {
+    if (linkPath === currentPath) {
       link.classList.add("active");
       link.setAttribute("aria-current", "page");
     }
