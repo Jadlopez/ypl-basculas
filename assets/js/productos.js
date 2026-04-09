@@ -37,10 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
     card.classList.remove('is-revealed');
   }
 
-  function updateSectionVisibility() {
+  function updateSectionVisibility(currentFilter) {
     catalogSections.forEach((section) => {
       const visibleCards = section.querySelectorAll('.product-card:not(.is-hidden)').length;
-      section.classList.toggle('is-hidden', visibleCards === 0);
+      const matchesSelectedSection =
+        currentFilter === 'all' || section.id === currentFilter;
+
+      section.classList.toggle('is-hidden', !matchesSelectedSection || visibleCards === 0);
     });
   }
 
@@ -77,16 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     productCards.forEach((card) => {
       const productName = normalizeText(card.dataset.name || '');
-      const productCategory = card.dataset.category || '';
-      const productText = normalizeText(card.textContent || '');
+      const parentSection = card.closest('.catalog-section');
+      const productCategory = parentSection ? parentSection.id : '';
 
       const matchesFilter =
         currentFilter === 'all' || productCategory === currentFilter;
 
       const matchesSearch =
-        searchTerm === '' ||
-        productName.includes(searchTerm) ||
-        productText.includes(searchTerm);
+        searchTerm === '' || productName.includes(searchTerm);
 
       const shouldShow = matchesFilter && matchesSearch;
 
@@ -98,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    updateSectionVisibility();
+    updateSectionVisibility(currentFilter);
     updateToolbarState(searchTerm, currentFilter, visibleCards);
     updateEmptyState(visibleCards);
   }
